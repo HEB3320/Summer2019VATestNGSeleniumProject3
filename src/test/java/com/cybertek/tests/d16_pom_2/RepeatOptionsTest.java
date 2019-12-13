@@ -91,7 +91,7 @@ public class RepeatOptionsTest extends TestBase {
         createCalendarEventsPage.repeat.click();
 // Verify that repeat options are Daily, Weekly, Monthly, Yearly (in that order)
 
-        // this is the expected ilst from test case
+        // this is the expected list from test case
         List<String> expectedList = Arrays.asList("Daily", "Weekly", "Monthly", "Yearly");
         // get the list of option from the page as a list of element
         List<WebElement> options = createCalendarEventsPage.repeatOptionsList().getOptions();
