@@ -25,7 +25,7 @@ public class DisplayedTest {
 
         // verify if element is displayed on screen, verify if visible
         Assert.assertTrue(!blue.isDisplayed());
-
+        System.out.println(blue.getAttribute("outerHTML"));
 
     }
 }

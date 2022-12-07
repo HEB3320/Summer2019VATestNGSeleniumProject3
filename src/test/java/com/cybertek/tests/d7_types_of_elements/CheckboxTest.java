@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class CheckboxTest {
 
@@ -23,12 +24,13 @@ public class CheckboxTest {
 
         //verify one is not selected
         Assert.assertFalse(one.isSelected());
-        //verify two is not selected
+        //verify two is  selected
         Assert.assertTrue(two.isSelected());
 
         System.out.println("check the first one");
 
         one.click();
+
         System.out.println("One is selected " +one.isSelected());
         System.out.println("Two is selected " +two.isSelected());
 

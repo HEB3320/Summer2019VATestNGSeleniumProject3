@@ -1,5 +1,7 @@
 package com.cybertek.tests.d14_properties_driver_class_test_base_class;
 
+import org.testng.annotations.Test;
+
 public class Singleton {
 
     // singleton class will have private constructor

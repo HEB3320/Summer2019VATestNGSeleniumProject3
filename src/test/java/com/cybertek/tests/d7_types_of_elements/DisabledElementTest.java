@@ -19,7 +19,7 @@ public class DisabledElementTest {
         green.click();
 
         driver.get("http://practice.cybertekschool.com/dynamic_controls");
-        WebElement input = driver.findElement(By.cssSelector("#input=example>input"));
+        WebElement input = driver.findElement(By.cssSelector("input[type='text']"));
 
         System.out.println("is element enabled: " + input.isEnabled());
 

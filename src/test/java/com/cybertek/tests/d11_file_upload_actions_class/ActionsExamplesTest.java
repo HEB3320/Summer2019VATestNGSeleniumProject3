@@ -1,14 +1,19 @@
 package com.cybertek.tests.d11_file_upload_actions_class;
 
 import com.cybertek.utilities.WebDriverFactory;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class ActionsExamplesTest {
 
@@ -32,7 +37,7 @@ public class ActionsExamplesTest {
      */
     @Test
     public void hoverTest() throws InterruptedException {
-        driver.get(" http://practice.cybertekschool.com/hovers");
+        driver.get("http://practice.cybertekschool.com/hovers");
 
         WebElement img1 = driver.findElement(By.tagName("img"));
 
@@ -42,7 +47,7 @@ public class ActionsExamplesTest {
         // moveToElement() --> moves the mouse on top of the given element
         // perform() --> complete the action, using every time after calling action
         actions.moveToElement(img1).perform();
-
+        Thread.sleep(2000);
         Assert.assertTrue(driver.findElement(By.linkText("View profile")).isDisplayed());
 
     }
@@ -76,6 +81,10 @@ public class ActionsExamplesTest {
         // at the end we call the build().perform()
         // build --> is used to chain the actions.
         actions.moveToElement(source).clickAndHold().moveToElement(target).release().build().perform();
+
+
+
+
 
     }
 }

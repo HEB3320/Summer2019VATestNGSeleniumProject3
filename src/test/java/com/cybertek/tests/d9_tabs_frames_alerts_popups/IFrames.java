@@ -28,7 +28,7 @@ public class IFrames {
         // switch to iframe
         // 1. ID or NAME
         // switchTo().frame() --> switched to frame
-        driver.switchTo().frame("mce_0_ifr");
+        driver.switchTo().frame("-");
         driver.findElement(By.id("tinymce")).sendKeys("Hello");
 
         // go back to first frame, useful when we have switched multiple frames
@@ -42,7 +42,7 @@ public class IFrames {
         // go back to parent frame
         driver.switchTo().parentFrame();
 
-        // 3. WEBELEMENT --> locate the ifrrame element and pass as argument
+        // 3. WEBELEMENT --> locate the iframe element and pass as argument
         WebElement frame = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(frame);
         driver.findElement(By.id("tinymce")).sendKeys("Hiiiiiii");
@@ -59,7 +59,7 @@ public class IFrames {
         // top frame
         driver.switchTo().frame("frame-top");
 
-        // swithc to mid frame
+        // switch to mid frame
         driver.switchTo().frame("frame-middle");
 
         // go back to parent
@@ -68,7 +68,7 @@ public class IFrames {
         driver.switchTo().frame("frame-right");
 
 
-        // go back to orginal frame
+        // go back to original frame
         driver.switchTo().defaultContent();
     }
 

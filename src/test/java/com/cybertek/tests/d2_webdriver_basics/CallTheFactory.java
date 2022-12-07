@@ -17,7 +17,7 @@ public class CallTheFactory {
 
 //        WebDriver driver2 = WebDriverFactory.getDriver("firefox");
 
-
-
+        System.out.println("user.dir: "+System.getProperty("java.runtime.version"));
+driver.quit();
     }
 }

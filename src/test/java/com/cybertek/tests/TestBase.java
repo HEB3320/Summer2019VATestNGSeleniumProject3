@@ -16,14 +16,14 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class TestBase {
 
-    protected WebDriver driver;
+    public WebDriver driver;
 
-    protected String url;
+    public String url;
     Actions actions;
 
-    protected ExtentReports report;
-    protected ExtentHtmlReporter htmlReporter;
-    protected ExtentTest extentLogger;
+    public ExtentReports report;
+    public ExtentHtmlReporter htmlReporter;
+    public ExtentTest extentLogger;
 
     @BeforeTest
     public void setUpTest() {
@@ -46,7 +46,7 @@ public abstract class TestBase {
     }
 
     @BeforeMethod
-    @Parameters("env")
+  //  @Parameters("env")
     public void setupMethod(String env ) {
         driver = Driver.get();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -80,3 +80,22 @@ public abstract class TestBase {
 
 
 }
+/*
+public String takeAScreenshotAndSave() {//Vasyl"s Codes
+        String path = System.getProperty("user.dir") + "/src/test/resources/test_data/";
+        path = path.replace("/", File.separator);
+        File file = new File(path);
+        file.mkdirs();
+        path += "screenshot.jpeg";
+        try (OutputStream outputStream = new FileOutputStream(path)) {
+            TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+            byte[] screenshot = takesScreenshot.getScreenshotAs(OutputType.BYTES);
+            outputStream.write(screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to create a screenshot :: " + path);
+        }
+        System.out.println("Screenshot saved here :: " + path);
+        return path;
+    }-
+*/

@@ -35,11 +35,11 @@ public class FileUploadTest {
         driver.get("http://practice.cybertekschool.com/upload");
 
         Thread.sleep(2000);
-        driver.findElement(By.id("file-upload")).sendKeys("/Users/cybertekschool/Desktop/file.txt");
+        driver.findElement(By.id("file-upload")).sendKeys("C:/Users/engin/Desktop/File.txt");
         driver.findElement(By.id("file-submit")).click();
 
         String actual = driver.findElement(By.id("uploaded-files")).getText();
-        Assert.assertEquals(actual, "file.txt");
+        Assert.assertEquals(actual, "File.txt");
     }
 
     @Test

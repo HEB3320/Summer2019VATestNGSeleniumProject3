@@ -49,7 +49,7 @@ public class PopupAndAlerts {
         driver.findElement(By.xpath("//button[2]")).click();
         // switch to the new alert
         alert = driver.switchTo().alert();
-        // dismiss --> clicking x to close, selecting no/cancer
+        // dismiss --> clicking x to close, selecting no/cancel
         alert.dismiss();
 
         // trigger the 3rd alert

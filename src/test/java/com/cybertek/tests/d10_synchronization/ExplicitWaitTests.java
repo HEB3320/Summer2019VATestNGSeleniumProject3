@@ -32,7 +32,7 @@ public class ExplicitWaitTests {
 
         // click on start
         driver.findElement(By.tagName("button")).click();
-
+        System.out.println(driver.getPageSource());
         // finding element that is not visible
         WebElement username = driver.findElement(By.id("username"));
 

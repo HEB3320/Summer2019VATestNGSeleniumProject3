@@ -1,13 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack automation" verbose="10">
 
-<suite name ="Vytract automation" verbose="1">
-
-    <test name ="Vytract smoke test">
-        <packages>
-            <package name ="com.cybertek.tests.d16_pom_2"></package>
-            <package name="com.cybertek.tests.d17_extent_reports  "></package>
-        </packages>
-
-
+    <!--    HOW TO RUN MANY SPECIFIC METHODS USING EXCLUDE-->
+    <test name="Vytrack smoke tests">
+        <classes>
+            <class name="com.cybertek.tests.d17_extent_reports.NegativeLoginTestWithReports">
+                <methods>
+                    <exclude name="wrongPasswordTest"/>
+                </methods>
+            </class>
+        </classes>
     </test>
+
 </suite>

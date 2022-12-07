@@ -25,6 +25,25 @@ public class MultipleWindows {
 
 
     @Test
+    public void selfStudy (){
+        driver.get("http://practice.cybertekschool.com/windows");
+        driver.findElement(By.linkText("Click Here")).click();
+        String parent = driver.getWindowHandle();
+        System.out.println("parent = " + parent);
+        System.out.println(driver.getTitle());
+        Set <String> all = driver.getWindowHandles();
+        System.out.println(all.size());
+for(String each: all){
+    if (each.equals(parent))
+        continue;
+    driver.switchTo().window(each);
+}
+        System.out.println(driver.getTitle());
+        driver.switchTo().window(parent);
+        System.out.println(driver.getTitle());
+    }
+
+    @Test
     public void switchWindowsTest(){
         driver.get("http://practice.cybertekschool.com/windows");
         System.out.println("Before new window  is opened "+ driver.getTitle());
@@ -34,6 +53,8 @@ public class MultipleWindows {
         /// still shows the title of the old window becasue we did not switch to the new window
         System.out.println("After new window  is opened "+ driver.getTitle());
 
+        //String childWindow = driver.getWindowHandles().toArray()[1].toString();
+       // driver.switchTo().window(childWindow);
 
         // window()  --> changes betwwen tabs, windows
 //        driver.switchTo().window("New Window");

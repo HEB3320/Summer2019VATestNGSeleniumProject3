@@ -5,13 +5,17 @@ import org.testng.annotations.Test;
 
 public class FirstTestNGTest {
 
-    @Test
+    @Test (groups = {"regression"})
     public void test1() {
         System.out.println("this is the first test");
             }
 
-    @Ignore
-    @Test
+
+
+
+
+    //@Ignore
+    @Test(enabled = false)
     public void test2() {
         System.out.println("this is the second test");
 

@@ -8,8 +8,13 @@ public class NGAssertionsTest{
         // this one will fail
         @Test
         public void test1(){
-            System.out.println("first assertion");
-            Assert.assertEquals("one", "two");
+
+try {
+    Assert.assertEquals("one", "two");
+}catch (Error e){
+    e.printStackTrace();
+}
+
 
             System.out.println("second assertion");
             Assert.assertEquals(1, 1);

@@ -10,6 +10,7 @@ public class GetUrlAndTitle {
         WebDriverManager.chromedriver().setup();
         // open chrome browser
         WebDriver driver = new ChromeDriver();
+
         driver.get("https://www.jetbrains.com/idea/download/");
 
         // get the title of the page
@@ -23,7 +24,7 @@ public class GetUrlAndTitle {
         // getPageSource --> get
         String pageSource = driver.getPageSource();
         System.out.println("pageSource = " + pageSource);
-
+driver.quit();
     }
 
 }

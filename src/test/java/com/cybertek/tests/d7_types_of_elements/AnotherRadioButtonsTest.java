@@ -10,25 +10,22 @@ import org.testng.annotations.Test;
 public class AnotherRadioButtonsTest {
 
     @Test
-            public void test1 (){
+    public void test1() {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("http://practice.cybertekschool.com/radio_buttons");
 
-        WebElement basketball =driver.findElement(By.id("basketball"));
+        WebElement basketball = driver.findElement(By.id("basketball"));
         WebElement football = driver.findElement((By.id("football")));
 
-        //verify if both radio buttos not selected
+        //verify if both radio buttons not selected
 
         Assert.assertFalse(basketball.isSelected());
         Assert.assertFalse(football.isSelected());
-
-
-
+        //Assert.assertFalse(basketball.isEnabled());
 
 
     }
-
 
 
 }

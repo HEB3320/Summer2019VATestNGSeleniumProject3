@@ -45,7 +45,7 @@ public class ExtentDemoTest {
     @Test
     public void test1(){
         // give name to the current test
-        extentLogger = report.createTest("TC001 Login as driver test");
+        extentLogger = report.createTest("TC001 Login as driver test","steps");
         // info() --> write test steps
         extentLogger.info("Open chrome");
         extentLogger.info("go to url");

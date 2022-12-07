@@ -1,0 +1,16 @@
+<suite name = "Suite 1">
+
+    <Listeners>
+        <Listener class-name = "listeners.TestNGListeners"></Listener>
+    </Listeners>
+
+<test name ="Test1">
+
+  <classes>
+
+      <class name ="com.cybertek.tests.listeners.TestNGListenersDemo1"></class>
+  </classes>
+
+</test>
+
+</suite>

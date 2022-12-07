@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
             WebElement blue = driver.findElement(By.id("blue"));
             // get the value of attribute "name"
             System.out.println(blue.getAttribute("name"));
+
             // get the value of attribute "id"
             System.out.println(blue.getAttribute("id"));
             // we get null if the element does not have that attribute

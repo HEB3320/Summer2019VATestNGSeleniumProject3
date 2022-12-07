@@ -11,6 +11,7 @@ public class PropertiesTest {
         // we provide the key of the property to get method
         String browser = ConfigurationReader.get("browser");
         System.out.println(browser);
+
 //        Assert.assertEquals(browser, "firefox");
 
         System.out.println(ConfigurationReader.get("url"));

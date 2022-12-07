@@ -73,7 +73,7 @@ public class WebTablesExamplesTest {
     public void getRow() {
         // get any from the table using index. we will ignore the headers. 1st row is the 1st row in the body
         WebElement row = driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[1]"));
-        System.out.println(row.getText());
+    //    System.out.println(row.getText());
 
         // get all the table row dynamically. we can do it in 2 steps
         // 1. get the number rows
@@ -83,9 +83,9 @@ public class WebTablesExamplesTest {
         System.out.println("number of rows excluding headers: " + allRowsExcludingHeaders.size());
 
         for (int i = 1; i <= allRowsExcludingHeaders.size(); i++) {
-            String xpath = "//table[@id='table1']/tbody/tr[" + i + "]";
-            System.out.println(xpath);
-            WebElement singleRow = driver.findElement(By.xpath(xpath));
+            String xpath2 = "//table[@id='table1']/tbody/tr[" + i + "]";
+            System.out.println(xpath2);
+            WebElement singleRow = driver.findElement(By.xpath(xpath2));
             System.out.println(singleRow.getText());
         }
 
@@ -152,7 +152,8 @@ public class WebTablesExamplesTest {
         String xpath = "//table[@id='table1']/tbody/tr[" + r + "]/td[" + c + "]";
         WebElement cell = driver.findElement(By.xpath(xpath));
         System.out.println(cell.getText());
-
+        // get the background color
+        System.out.println(cell.getCssValue("background-color"));
     }
 
     @Test
@@ -163,6 +164,12 @@ public class WebTablesExamplesTest {
         String xpath = "//table[@id=‘table1']//td[.='" + name + "']/../td[3]";
         System.out.println(driver.findElement(By.xpath(xpath)).getText());
     }
+@Test
+    public void self(){
 
+    List<WebElement> allCells = driver.findElements(By.xpath("//table[@id='table1']//th|//td"));
+    System.out.println(allCells.size());
+allCells.forEach(Hayri-> System.out.println(Hayri.getText()));
+}
 
 }

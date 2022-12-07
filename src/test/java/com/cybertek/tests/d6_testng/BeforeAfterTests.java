@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class BeforeAfterTests {
 
 
-    @Test
+    @Test (groups = {"regression"})
     public void test1() {
         System.out.println("this is test one");
     }
@@ -27,6 +27,7 @@ public class BeforeAfterTests {
             public void  teardownMethod() {
                 System.out.println("After Method");
                 System.out.println("Closing Chrome");
+
             }
 
 

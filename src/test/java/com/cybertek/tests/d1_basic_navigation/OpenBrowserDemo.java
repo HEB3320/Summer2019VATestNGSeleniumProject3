@@ -11,7 +11,7 @@ public class OpenBrowserDemo {
         // alt+enter    WIN
 
         // we HAVE TO enter this line every time we want to open chrome
-        // wihtout it we get exception
+        // without it, we get exception
         WebDriverManager.chromedriver().setup();
 
         // this part is selenium
