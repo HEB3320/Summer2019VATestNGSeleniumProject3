@@ -15,7 +15,7 @@ public class CheckboxTest {
 
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/checkboxes");
+        driver.get("https://practice.cydeo.com/checkboxes");
         WebElement one= driver.findElement(By.xpath("//input[1]"));
         WebElement two= driver.findElement(By.xpath("//input[2]"));
 

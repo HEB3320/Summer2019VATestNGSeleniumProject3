@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.Locale;
+
 public class WebDriverFactory {
 
     // you guys
@@ -29,4 +31,6 @@ public class WebDriverFactory {
     }
 
 
-}
+    }
+
+

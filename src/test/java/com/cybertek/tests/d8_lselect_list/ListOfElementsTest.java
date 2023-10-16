@@ -14,7 +14,7 @@ public class ListOfElementsTest {
     @Test
     public void test1 (){
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/multiple_buttons");
+        driver.get("https://practice.cydeo.com/multiple_buttons");
         List<WebElement> buttons =driver.findElements(By.tagName("button"));
         System.out.println(buttons.size());
 
@@ -30,7 +30,7 @@ public class ListOfElementsTest {
     @Test
     public void test2(){
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/multiple_buttons");
+        driver.get("https://practice.cydeo.com/multiple_buttons");
 
         List<WebElement> buttons = driver.findElements(By.tagName("utton"));
         System.out.println(buttons.size());

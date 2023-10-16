@@ -13,7 +13,7 @@ public class AnotherRadioButtonsTest {
     public void test1() {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/radio_buttons");
+        driver.get("https://practice.cydeo.com/radio_buttons");
 
         WebElement basketball = driver.findElement(By.id("basketball"));
         WebElement football = driver.findElement((By.id("football")));
@@ -22,7 +22,7 @@ public class AnotherRadioButtonsTest {
 
         Assert.assertFalse(basketball.isSelected());
         Assert.assertFalse(football.isSelected());
-        //Assert.assertFalse(basketball.isEnabled());
+        Assert.assertTrue(basketball.isEnabled());
 
 
     }

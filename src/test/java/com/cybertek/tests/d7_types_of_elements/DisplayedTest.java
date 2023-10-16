@@ -13,7 +13,7 @@ public class DisplayedTest {
     @Test
     public void test1() {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/dynamic_loading/1");
+        driver.get("https://practice.cydeo.com/dynamic_loading/1");
 
         // VERIFY ELEMENT IS DISPLAYED
 
@@ -24,7 +24,7 @@ public class DisplayedTest {
         WebElement blue = driver.findElement(By.id("username"));
 
         // verify if element is displayed on screen, verify if visible
-        Assert.assertTrue(!blue.isDisplayed());
+        Assert.assertFalse(blue.isDisplayed());
         System.out.println(blue.getAttribute("outerHTML"));
 
     }

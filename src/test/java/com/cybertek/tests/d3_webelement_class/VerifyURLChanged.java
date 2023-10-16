@@ -17,8 +17,8 @@ public class VerifyURLChanged {
     public static void main(String[] args) {
         // open browser
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        // go to http://practice.cybertekschool.com/forgot_password
-        driver.get("http://practice.cybertekschool.com/forgot_password");
+        // go to https://practice.cydeo.com/forgot_password
+        driver.get("https://practice.cydeo.com/forgot_password");
         //  enter any email
         WebElement emailInput = driver.findElement(By.name("email"));
 
@@ -31,7 +31,7 @@ public class VerifyURLChanged {
         retrievePassword.click();
 
         //  * verify that url changed to http://practice.cybertekschool.com/email_sent
-        String expected = "http://practice.cybertekschool.com/email_sent";
+        String expected = "https://practice.cydeo.com/email_sent";
         String actual = driver.getCurrentUrl();
 
         if (expected.equals(actual)) {

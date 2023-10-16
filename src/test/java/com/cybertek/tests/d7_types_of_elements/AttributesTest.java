@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
         @Test
         public void test1(){
             WebDriver driver = WebDriverFactory.getDriver("chrome");
-            driver.get("http://practice.cybertekschool.com/radio_buttons");
+            driver.get("https://practice.cydeo.com/radio_buttons");
             WebElement blue = driver.findElement(By.id("blue"));
             // get the value of attribute "name"
             System.out.println(blue.getAttribute("name"));

@@ -13,9 +13,9 @@ public class NameLocatorTest {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
        // driver.manage().window().maximize();
-        driver.get("http://practice.cybertekschool.com/sign_up");
+        driver.get("https://practice.cydeo.com/sign_up");
 
-
+driver.manage().window().maximize();
         WebElement fullname =driver.findElement(By.name("full_name"));
 
         Faker faker = new Faker();

@@ -11,7 +11,7 @@ public class TagNameLocatorDemo {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
-        driver.get("http://practice.cybertekschool.com/sign_up");
+        driver.get("https://practice.cydeo.com/sign_up");
 
         WebElement fullName = driver.findElement(By.tagName("input"));
         fullName.sendKeys("John Doe");

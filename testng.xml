@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/engin/IdeaProjects/Summer2019VATestNGSeleniumProject2/src/test/java/com/cybertek/tests/tryout/DDT3.java">
+    <test verbose="2" preserve-order="true" name="C:/Users/engin/Summer2019VATestNGSeleniumProject3/src/test/java/com/cybertek/tests/d6_testng/NGAssertionsTest.java">
         <classes>
-            <class name="com.cybertek.tests.tryout.DDT3">
+            <class name="com.cybertek.tests.d6_testng.NGAssertionsTest">
                 <methods>
                     <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                    <include name="test5"/>
                 </methods>
             </class>
         </classes>

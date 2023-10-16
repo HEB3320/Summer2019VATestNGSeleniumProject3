@@ -13,7 +13,7 @@ public class RadioButtonsTest {
     public void test1() {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/radio_buttons");
+        driver.get("https://practice.cydeo.com/radio_buttons");
 
         WebElement blue =driver.findElement(By.id("blue"));
         WebElement red =driver.findElement(By.id("red"));
@@ -22,7 +22,7 @@ public class RadioButtonsTest {
         System.out.println("is red selected " + red.isSelected());
 
 
-//verfy if blue is selected
+//verify if blue is selected
         Assert.assertTrue(blue.isSelected());
 
         // verify if red is not selected

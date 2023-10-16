@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing">
+    <test name="Try">
+        <classes>
+            <class name="com.cybertek.tests.d6_testng.NGAssertionsTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

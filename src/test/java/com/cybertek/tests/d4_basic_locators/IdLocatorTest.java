@@ -10,7 +10,7 @@ public class IdLocatorTest {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
-        driver.get("http://practice.cybertekschool.com/multiple_buttons");
+        driver.get("https://practice.cydeo.com/multiple_buttons");
         WebElement element = driver.findElement(By.id("disappearing_button"));
 
         String txt = element.getText();

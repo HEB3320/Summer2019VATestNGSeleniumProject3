@@ -10,7 +10,7 @@ public class LinkTextAndPartialLinkTextTest {
     public static void main(String[] args) {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/dynamic_loading");
+        driver.get("https://practice.cydeo.com/dynamic_loading");
         WebElement link = driver.findElement(By.linkText("Example 6: Loading overlay that disappears and disappears again"));
         System.out.println(link.getText());
 

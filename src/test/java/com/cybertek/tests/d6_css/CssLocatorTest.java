@@ -10,7 +10,7 @@ public class CssLocatorTest {
     public static void main(String[] args) {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/multiple_buttons");
+        driver.get("https://practice.cydeo.com/multiple_buttons");
         WebElement element = driver.findElement(By.cssSelector("button#disappearing_button"));
 
         System.out.println(element.getText());

@@ -15,7 +15,7 @@ public class SelectClassTest {
     @Test
     public void printAllOptions(){
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/dropdown");
+        driver.get("https://practice.cydeo.com/dropdown");
 
         // Locate the element with the select tag
         WebElement element = driver.findElement(By.id("state"));
@@ -34,7 +34,7 @@ public class SelectClassTest {
     @Test
     public void selectAndVerifySelected() throws InterruptedException {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/dropdown");
+        driver.get("https://practice.cydeo.com/dropdown");
 
         // create a select object.
         //1 locate the webelement with the select tag

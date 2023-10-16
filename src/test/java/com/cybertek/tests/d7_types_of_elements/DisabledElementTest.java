@@ -12,18 +12,18 @@ public class DisabledElementTest {
     public void test1() {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/radio_buttons");
+        driver.get("https://practice.cydeo.com/radio_buttons");
 
         WebElement green = driver.findElement(By.id("green"));
         System.out.println("is element enabled: " + green.isEnabled());
         green.click();
 
-        driver.get("http://practice.cybertekschool.com/dynamic_controls");
+        driver.get("https://practice.cydeo.com/dynamic_controls");
         WebElement input = driver.findElement(By.cssSelector("input[type='text']"));
 
         System.out.println("is element enabled: " + input.isEnabled());
 
-        input.sendKeys("engin");
+//        input.sendKeys("engin");
 
     }
 

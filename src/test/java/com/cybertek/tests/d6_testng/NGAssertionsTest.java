@@ -44,7 +44,7 @@ try {
 //        System.out.println("a".equals("a"));
         }
 
-        @Test
+        @Test (description = "assertion")
         public void test4(){
             Assert.assertFalse(1<0);
 
@@ -55,7 +55,7 @@ try {
         public void test5(){
 //        Assert.assertEquals("Cbt", "CCbt", "Title did not match");
 
-            Assert.assertTrue("ma$cbt.com".contains("@"), "All emails must contain @ sign");
+            Assert.assertTrue("ma@cbt.com".contains("@"), "All emails must contain @ sign");
         }
 
         @AfterMethod

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class FirstTestNGTest {
 
-    @Test (groups = {"regression"})
+    @Test (groups = "regression")
     public void test1() {
         System.out.println("this is the first test");
             }
@@ -14,7 +14,7 @@ public class FirstTestNGTest {
 
 
 
-    //@Ignore
+//    @Ignore
     @Test(enabled = false)
     public void test2() {
         System.out.println("this is the second test");

@@ -15,7 +15,7 @@ public class DropdownListNoSelectTagTest {
     @Test
     public void test() {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/dropdown");
+        driver.get("https://practice.cydeo.com/dropdown");
 
 
         WebElement dropdownlink = driver.findElement(By.id("dropdownMenuLink"));
@@ -43,12 +43,12 @@ public class DropdownListNoSelectTagTest {
 
         boot.click();
 
-        List<WebElement> strap = driver.findElements(By.xpath("//ul[@class='dropdown-menu test']"));
+        List<WebElement> strap = driver.findElements(By.xpath("//ul[@class='dropdown-menu test']/li"));
         System.out.println("strap.size() = " + strap.size());
-
-        for (WebElement each : strap) {
-            System.out.println(each.getText());
-        }
+       strap.forEach(x->System.out.println(x.getText()));
+//        for (WebElement each : strap) {
+//            System.out.println(each.getText());
+//        }
 
         driver.findElement(By.linkText("About Us")).click();
         driver.quit();
